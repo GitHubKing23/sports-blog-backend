@@ -5,9 +5,9 @@ const analyticsSchema = new mongoose.Schema({
     referrer: { type: String },
     userAgent: { type: String },
     ip: { type: String },
-    location: { type: Object }, // Stores geolocation data
-    timeSpent: { type: Number, default: 0 }, // In seconds
-    clickedElements: { type: [String], default: [] }, // Tracks clicked elements
+    location: { type: Object },
+    timeSpent: { type: Number, default: 0 },
+    clickedElements: { type: [String], default: [] },
     timestamp: { type: Date, default: Date.now }
 });
 
