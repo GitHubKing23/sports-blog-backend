@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Analytics = require('../models/Analytics');
+const Analytics = require('../models/analytics');  // Changed to lowercase 'analytics'
 const axios = require('axios');
 
 // ✅ Track page visits with IP & geolocation
@@ -103,6 +103,7 @@ router.post('/track-click', async (req, res) => {
         res.status(500).json({ message: 'Error tracking click' });
     }
 });
+
 // ✅ Track scroll depth
 router.post('/track-scroll', async (req, res) => {
     try {

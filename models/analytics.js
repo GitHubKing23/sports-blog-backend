@@ -11,4 +11,4 @@ const analyticsSchema = new mongoose.Schema({
     timestamp: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Analytics', analyticsSchema);
+module.exports = mongoose.model('analytics', analyticsSchema);
